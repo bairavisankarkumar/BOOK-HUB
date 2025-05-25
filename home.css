@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: gainsboro;
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    left: 0;
+     background-color:salmon;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+section nav.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none; 
+    font-size: 50px;  
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 50px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.1s linear;
+}
+section nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: gainsboro;
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: gainsboro(83, 14, 14);
+    transform: translateX(7px);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Arial Black', sans-serif;
+    position: relative;
+    display: inline-block;
+    color:gainsboro;
+    text-shadow:
+        -2px -2px 0 white,
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white,
+        -4px -4px 0 black,
+         4px -4px 0 black,
+        -4px  4px 0 black,
+         4px  4px 0 black;
+}
+section nav .icon i{
+    font-size: 17px;
+    color: black;
+    margin: 0 10px;
+    cursor:pointer;
+    transition: 0.3s linear;
+}
+section .main{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+}
+section .main .men_text h1{
+    font-size: 50px;
+    position: relative;
+    top:-55px;
+    left: 20px;
+}
+section .main .men_text span{
+    color: salmon;
+    font-family:mv boli;
+}
+section .main .main_image img{
+    width:700px;
+    position: relative;
+    left:70px;
+    
+}
+section h3{
+    width:600px;
+    text-align: justify;
+    position: relative;
+    margin-left:130px;
+    margin-right: 1241px;
+    margin-top:-100px;
+    margin-bottom : 50px;
+    line-height: 20px;
+}
+section h3 span{
+    color: salmon;
+    padding-left: 90px;
+    font-family: mv boli;
+    font-size: 30px;
+}
+
+section .main_btn {
+    background-color:salmon;
+    position: relative; 
+    cursor: pointer;
+    padding :10px 25px;
+    display: inline-block;
+    margin-left:130px;
+    color:black;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+
+section .main_btn a{
+    color: black;
+    text-decoration: none;
+}
+section .main_btn a:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+section .main_btn i{
+    color:black;
+    transition: 0.3s linear;
+}
+section .main_btn :hover{
+    transform: translateX(7px);
+    }
+
+section nav .icon{
+    font-size:18px;
+    color: black;
+    margin:0 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+section nav .icon i:hover{
+    color:gainsboro;
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+section .main .men_text h1{
+    font-size: 60px;
+    position:relative;
+    left:30px;
+    top:-100px;
+}
+section .main .men_text span{
+   padding-left: 30px;
+   font-size: 70px;
+}
+section .main .main_image img{
+    position: relative;
+}
+section p{
+    width:650px;
+}
+
+::-webkit-scrollbar{
+    width:13px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius:15px;
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: salmon;
+    border-radius:15px;
+  }
+  section .main_btn{
+    margin-left: 1100px;
+    margin-top: 500px;
+  }
+  section .main_btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+   
+}
+
+section .main_btn a:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+section .main_btn:hover { 
+    border: 2px solid black;
+}
+
+section .main_btn:hover i {
+    transform: translateX(5px);
+    transition: 0.3s ease;
+}
+
+.main1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin-top: 50px; /* adjust as needed */
+}
+
+.main1 .men_text1 h1 {
+    font-size: 60px;
+    position: relative;
+    left: 0;
+    text-align: right;
+}
+
+.main1 .men_text1 span {
+    color: salmon;
+    font-family: mv boli;
+    font-size: 70px;
+    padding-left: 30px;
+}
+
+
+section .main_btn {
+    margin-top: 10px;
+    background-color:salmon;
+    position: relative; 
+    cursor: pointer;
+    padding :10px 25px;
+    display: inline-block;
+    margin-left:300px;
+    color:black;
+    margin-bottom: 50px;
+  }
+
+section .main_btn a{
+    color: black;
+    text-decoration: none;
+}
+section .main_btn i{
+    color:black;
+    transition: 0.3s linear;
+}
+section .main_btn :hover{
+    transform: translateX(7px);
+    }

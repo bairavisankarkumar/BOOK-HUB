@@ -1,0 +1,221 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(180, 69, 21);
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    left: 0;
+    background-color: rgb(235, 212, 111);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+section nav.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+    
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.1s linear;
+}
+section nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(235, 212, 111);
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color: rgb(180, 69, 21);
+    transform: translateX(7px);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Arial Black', sans-serif;
+    position: relative;
+    display: inline-block;
+    text-shadow:
+        -2px -2px 0 white,
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white,
+        -4px -4px 0 black,
+         4px -4px 0 black,
+        -4px  4px 0 black,
+         4px  4px 0 black;
+}
+section nav .icon i{
+    font-size: 17px;
+    color: black;
+    margin: 0 10px;
+    cursor:pointer;
+    transition: 0.3s linear;
+}
+
+section .main .men_text span{
+    color:rgb(235, 212, 111);
+    font-family:mv boli;
+}
+section .main .main_image img{
+    width:700px;
+    position: relative;
+    left:70px;
+    
+}
+section p{
+    width:600px;
+    text-align: justify;
+    position: relative;
+    margin-left:130px;
+    margin-right: 1241px;
+    margin-top:-100px;
+    margin-bottom : 50px;
+    line-height: 20px;
+}
+section p span{
+    color: rgb(235, 212, 111);
+
+}
+
+section .main_btn {
+    background-color: rgb(235, 212, 111);
+    position: relative; 
+    cursor: pointer;
+    padding :10px 25px;
+    display: inline-block;
+    margin-left:130px;
+    color:black;
+  }
+
+section .main_btn a{
+    color: black;
+    text-decoration: none;
+}
+section .main_btn i{
+    color:black;
+    transition: 0.3s linear;
+}
+section .main_btn :hover{
+    transform: translateX(7px);
+    }
+
+section nav .icon{
+    font-size:18px;
+    color: black;
+    margin:0 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+section nav .icon i:hover{
+    color:rgb(180, 69, 21);
+}
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding-left:50px;
+    padding-right: 50px;
+    margin-top:-350px;
+}
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .about_main .image img{
+    width: 800px;
+    position:relative;
+    padding-right: 40px;
+    padding-bottom: -100px;
+}
+.about .about_main .about_text h1{
+    font-size: 50px;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.about .about_main .about_text h1 span{
+    color:rgb(235, 212, 111);
+    margin-right: 15px;
+    font-family: mv boli;
+}
+.about .about_main .about_text p span{
+    color:rgb(235, 212, 111);
+    margin-right: 15px;
+    font-family: mv boli;
+    font-size: 20px;
+}
+.about .about_main .about_text h3{
+    font-size: 30px;
+    position: relative;
+    padding-bottom: 40px ;
+}
+.about .about_main .about_text p{
+    width: 600px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 22px;
+}
+.about .about_btn{
+    background-color:rgb(235, 212, 111);
+    padding:10px 25px ;
+    color: black;
+    position: relative;
+    left:56.5%;
+    margin-top: 100px; 
+    margin-right: 1275px;
+    border: 2px solid black;
+    border-radius: 20px;
+
+}
+.about .about_btn a{
+    color: black;
+    text-decoration: none;
+}
+.about .about_btn:hover{
+    transition: 1s;
+    transform: scale(1.2);
+}
+::-webkit-scrollbar{
+    width:13px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius:15px;
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(235, 212, 111);
+    border-radius:15px;
+  }

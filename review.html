@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK HUB</title>
+    <link rel = "icon" href="pictures/bookicon.jpeg">
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="review.css">
+    <script src="review.js"></script>
+</head>
+<body>
+    <section id="home">
+     <nav>
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="pictures/WhatsApp_Image_2025-05-24_at_19.20.59_76513bb5-removebg-preview.png" height="300px" width="200px">
+        </div>
+            <ul>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="home.html">Home</a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="about.html">About</a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="books.html">Our Library</a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="order.html">Order</a></li>
+                <li data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="review.html">Review</a></li>
+            </ul>
+            <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1300"  class="icon">
+                <i data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"class="fa-solid fa-heart" ></i>
+                <i data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"class="fa-solid fa-cart-shopping" ></i>
+                <i data-aos="fade-up" data-aos-duration="1500" data-aos-delay="700"class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+     </nav> 
+    </section><div id="reviewList"><h1>All Review</h1></div>
+
+<!-- Review Form -->
+<div class="review-container">
+  <h2>Submit Your Review</h2>
+  <form id="reviewForm" method="post">
+    <label>Your Name:</label>
+    <input type="text" id="name" placeholder="Your name" required>
+
+    <label>Your Mail-ID:</label>
+    <input type="email" id="email" placeholder="Your Mail-ID" required>
+
+
+    <label>Rating (1–5):</label>
+    <select id="rating" required>
+      <option value="">Select</option>
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+
+    <label>Book Name:</label>
+    <input type="text" id="bookTitle" placeholder="Title of the Book" required>
+
+    <label>Comment:</label>
+    <textarea id="comment" placeholder="Your Thoughts" rows="4" required></textarea>
+
+    <label>Profile Image:</label>
+    <input type="file" id="profilePic" accept="image/*">
+
+    <button type="submit">Submit Review</button>
+  </form>
+</div>
+
+  <!--review-->
+
+
+  <div class="review">
+
+    <div class="review_box">
+        <div class="review_card">
+            <div class="review_profile">
+                <img src="pictures/people_1.jpg" height="250px" width="260px">
+            </div>
+            <div class="review_text">
+                <h2 class="name">Mrs.Revathi</h2>
+                <div class="review_icon">
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <h5>Book Name : Secret
+                </h5>
+                    <p>Magical and full of wonder. A great start to a legendary series.</p>
+                </div>
+            </div>
+        </div>
+        <div class="review_card">
+            <div class="review_profile">
+                <img src="pictures/people2.jpg" height="250px" width="260px">
+            </div>
+            <div class="review_text">
+                <h2 class="name">Kanmani</h2>
+                <div class="review_icon">
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <h5>Book Name : Imagine Me</h5>
+                    <p>
+                       Beautifully written and deeply moving.  </p>
+                </div>
+            </div>
+        </div>
+         <div class="review_card">
+            <div class="review_profile">
+                <img src="pictures/people3.webp" height="250px" width="260px">
+            </div>
+            <div class="review_text">
+                <h2 class="name">Jenny</h2>
+                <div class="review_icon">
+                    <div class="menu_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="review_social">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                     <h5>Book Name : Fire Of Hell</h5>
+                    <p> A powerful and thought-provoking book.</p>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+<!--copy-->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    
+
+</body>
+</html>

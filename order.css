@@ -1,0 +1,346 @@
+
+**{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(47, 89, 48);
+}
+section{
+    width: 100%;
+    height: 100%;
+}
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    left: 0;
+    background-color: rgb(229, 229, 170);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+section nav.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+section nav ul{
+    list-style: none; 
+    font-size: 50px;  
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 50px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.1s linear;
+}
+section nav ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: gainsboro;
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: gainsboro(83, 14, 14);
+    transform: translateX(7px);
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 70px;
+    font-family: 'Arial Black', sans-serif;
+    position: relative;
+    display: inline-block;
+    color:gainsboro;
+    text-shadow:
+        -2px -2px 0 white,
+         2px -2px 0 white,
+        -2px  2px 0 white,
+         2px  2px 0 white,
+        -4px -4px 0 black,
+         4px -4px 0 black,
+        -4px  4px 0 black,
+         4px  4px 0 black;
+}
+section nav .icon i{
+    font-size: 17px;
+    color: black;
+    margin: 0 10px;
+    cursor:pointer;
+    transition: 0.3s linear;
+}
+section nav.logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 7px 0;
+}
+section nav ul{
+    list-style: none;
+    
+}
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+section nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.1s linear;
+}
+section nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: rgb(47, 89, 48);
+    display: block;
+    transition: 0.2s linear;
+}
+section nav ul li a:hover::after{
+    width: 100%;
+}
+section nav ul li a:hover{
+    color:rgb(47, 89, 48);
+   transform: translateX(7px);
+}
+section nav .icon i{
+    font-size: 17px;
+    color: black;
+    margin: 0 10px;
+    cursor:pointer;
+    transition: 0.3s linear;
+}
+
+section .main .men_text span{
+    color:rgb(47, 89, 48);
+    font-family:mv boli;
+}
+section .main .main_image img{
+    width:700px;
+    position: relative;
+    left:70px;  
+}
+section p{
+    width:600px;
+    text-align: justify;
+    position: relative;
+    margin-left:130px;
+    margin-right: 1241px;
+    margin-top:-100px;
+    margin-bottom : 50px;
+    line-height: 20px;
+}
+section p span{
+    color: rgb(229, 229, 170);
+}
+section .main_btn {
+    background-color: rgb(229, 229, 170);
+    position: relative; 
+    cursor: pointer;
+    padding :10px 25px;
+    display: inline-block;
+    margin-left:130px;
+    color:black;
+  }
+
+section .main_btn a{
+    color: black;
+    text-decoration: none;
+}
+section .main_btn i{
+    color:black;
+    transition: 0.3s linear;
+}
+section .main_btn :hover{
+    transform: translateX(7px);
+}
+section nav .icon{
+    font-size:18px;
+    color: black;
+    margin:0 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+section nav .icon i:hover{
+    color:rgb(47, 89, 48);
+    margin: 0 10px;
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/*Order*/
+
+
+
+
+.order{
+    width:100%;
+    height:100vh;
+    padding:70px 0;
+    background-size: 100%;
+    background-position: center;
+}
+.order h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-size: 55px;
+    padding-bottom:150px;
+    margin-top: -300px; 
+}
+.order h1 span{
+    margin-left: 15px;
+    color:rgb(229, 229, 170);
+    font-family:mv boli;
+    padding-right: 20px; 
+}
+.order h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background:rgb(229, 229, 170);
+    position:relative;
+    bottom: 15px;
+    display:block;
+    position:relative;
+    bottom:15px;
+}
+.order .order_main{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.order .order_main .order_image img{
+    width:700px;
+    margin-bottom: 200px;
+}
+.order .order_main form .input{
+    margin:5px;
+}
+.order .order_main form .input input{
+    width:300px;
+    height:35px;
+    padding:0 10px;
+    border:2px solid black;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom:8px;
+}
+.order .order_main form .input input:focus{
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 20px;
+}
+.order .order_main form a{
+    padding: 10px 15px;
+    background-color: gainsboro;
+    color:black;
+    width:40%;
+    text-align: center;
+    text-decoration: none;
+}
+.order .order_main form a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(229, 229, 170); 
+    margin-left:100px;
+    margin-right:100px;
+    margin-top: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+ }
+ .order .order_main form a:hover{
+    transform: scale(1.2);
+    transition: 1.1s;
+    border: 2px solid black;
+    border-radius: 20px;
+ }
+ 
+
+ /*Footer*/
+ footer{
+    width:100%;
+    padding:30px 0 0 20px;
+    background: lightgrey;
+ }
+ footer .footer_main{
+        display: flex; 
+        justify-content: space-between; 
+        align-items: flex-start;
+        padding: 70px;
+ }
+ footer .footer_main .footer_tag{
+    text-align:center;
+ }
+ footer .footer_main .footer_tag h2{
+    color:black;
+    margin-bottom:25px;
+    font-size:30px;
+ }
+ footer .footer_main .footer_tag p{
+    margin:10px 0;
+ }
+ footer .footer_main .footer_tag i{
+    margin:0 5px;
+    cursor: pointer;
+ }
+ footer .footer_main .footer_tag i:hover{
+    color:rgb(47, 89, 48);
+ }
+
+
+ /*end*/
+
+ .end {
+    flex-basis: 100%; 
+    text-align: center; 
+    margin-top:-40px;
+    font-size: 14px;
+    color: #555; 
+  }
+  
+  .end span {
+    font-weight: bold; 
+    color: deepskyblue; 
+  } 
+  .end i {
+    color:deeppink;
+  }
+   
+  ::-webkit-scrollbar{
+    width:13px;
+  }
+  ::-webkit-scrollbar-track{
+    border-radius:15px;
+    box-shadow:inset 0 0 5px rgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: rgb(229, 229, 170);
+    border-radius:15px;
+  }
+
+
